@@ -8,10 +8,11 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
   }
 
   body {
-    @apply font-primary text-neutral-500 bg-surface-white antialiased;
+    @apply font-primary text-neutral-500 bg-surface-white antialiased overflow-x-hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -23,6 +24,45 @@
   .glass-card {
     @apply bg-white/10 border border-white/15 backdrop-blur-[16px] rounded-2xl;
   }
+
+  /* Trusted By — continuous right-to-left marquee, seamless loop */
+  .marquee-rtl-track {
+    animation: marquee-rtl 28s linear infinite;
+    will-change: transform;
+  }
+
+  @media (max-width: 639px) {
+    .marquee-rtl-track {
+      animation-duration: 20s;
+    }
+  }
+}
+
+@keyframes marquee-rtl {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes slide-in-top {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in-top {
+  animation: slide-in-top 0.3s ease-out forwards;
+}
+
+/* Mobile drawer footer — safe area for notched devices */
+.mobile-drawer-footer {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom, 0px));
 }
 
 @media (prefers-reduced-motion: reduce) {

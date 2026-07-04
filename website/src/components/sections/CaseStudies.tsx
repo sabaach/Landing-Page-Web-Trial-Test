@@ -22,7 +22,7 @@ export function CaseStudies() {
 
   return (
     <SectionWrapper background="white" id="case-studies">
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+      <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-4 sm:gap-6">
         <div className="max-w-2xl">
           <motion.span 
             initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export function CaseStudies() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-4 tracking-tight"
+            className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900 mb-3 sm:mb-4 tracking-tight"
           >
             Real results for global brands
           </motion.h2>
@@ -46,7 +46,7 @@ export function CaseStudies() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-neutral-500"
+            className="text-base sm:text-lg text-neutral-500"
           >
             We measure success in revenue, not just impressions.
           </motion.p>
@@ -82,21 +82,21 @@ export function CaseStudies() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-surface-dark/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white leading-snug">
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-white leading-snug">
                     {study.title}
                   </h3>
                 </div>
               </div>
 
               {/* Stats Area */}
-              <div className="grid grid-cols-3 divide-x divide-neutral-100 p-6 flex-grow">
+              <div className="grid grid-cols-3 divide-x divide-neutral-100 p-4 sm:p-6 flex-grow">
                 {study.stats.map((stat, i) => (
-                  <div key={i} className="px-2 first:pl-0 last:pr-0 flex flex-col items-center text-center">
-                    <span className="font-display text-2xl lg:text-3xl font-extrabold text-primary-600 mb-1">
+                  <div key={i} className="px-1 sm:px-2 first:pl-0 last:pr-0 flex flex-col items-center text-center min-w-0">
+                    <span className="font-display text-lg sm:text-2xl lg:text-3xl font-extrabold text-primary-600 mb-1 truncate w-full">
                       {stat.value}
                     </span>
-                    <span className="text-[10px] md:text-xs font-semibold text-neutral-500 uppercase tracking-wide leading-tight">
+                    <span className="text-[9px] sm:text-[10px] md:text-xs font-semibold text-neutral-500 uppercase tracking-wide leading-tight line-clamp-2">
                       {stat.label}
                     </span>
                   </div>

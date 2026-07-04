@@ -18,7 +18,7 @@ export function SectionWrapper({ className, background = 'white', children, id, 
       id={id}
       className={twMerge(
         clsx(
-          "py-16 sm:py-20 lg:py-24 overflow-hidden",
+          "py-12 sm:py-16 lg:py-24 overflow-hidden",
           backgrounds[background],
           className
         )

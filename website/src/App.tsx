@@ -14,7 +14,7 @@ import {
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col font-primary text-neutral-500 selection:bg-primary-200 selection:text-primary-900">
+    <div className="min-h-screen flex flex-col overflow-x-hidden font-primary text-neutral-500 selection:bg-primary-200 selection:text-primary-900">
       <Navbar />
       
       <main className="flex-grow">

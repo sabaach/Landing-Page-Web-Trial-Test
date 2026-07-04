@@ -23,7 +23,7 @@ export function Services() {
 
   return (
     <SectionWrapper background="white" id="services">
-      <div className="text-center mb-16 max-w-3xl mx-auto">
+      <div className="text-center mb-10 sm:mb-16 max-w-3xl mx-auto">
         <motion.span 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-6 tracking-tight"
+          className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900 mb-4 sm:mb-6 tracking-tight"
         >
           End-to-end digital marketing solutions for growth in Korea
         </motion.h2>
@@ -46,7 +46,7 @@ export function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-lg text-neutral-500"
+          className="text-base sm:text-lg text-neutral-500"
         >
           Integrated, data-driven solutions built for the Korean market—designed to reduce risk and accelerate growth.
         </motion.p>
@@ -61,13 +61,13 @@ export function Services() {
       >
         {services.map((service, index) => (
           <motion.div key={index} variants={itemVariants}>
-            <Card hover className="h-full p-8 flex flex-col group cursor-pointer">
+            <Card hover className="h-full p-6 sm:p-8 flex flex-col group cursor-pointer">
               <div className="flex items-start mb-6">
                 <div className="w-12 h-12 rounded-xl bg-neutral-100 flex items-center justify-center text-primary-600 group-hover:bg-primary-50 group-hover:scale-110 transition-all duration-300">
                   <service.icon className="w-6 h-6" strokeWidth={1.5} />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-neutral-900 mb-4 group-hover:text-primary-600 transition-colors">
+              <h3 className="text-lg sm:text-xl font-semibold text-neutral-900 mb-3 sm:mb-4 group-hover:text-primary-600 transition-colors">
                 {service.title}
               </h3>
               <p className="text-neutral-500 text-sm leading-relaxed flex-grow">

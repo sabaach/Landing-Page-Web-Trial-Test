@@ -133,7 +133,7 @@ export const insights = [
     title: 'Naver vs. Google in Korea: Where to Invest and Why',
     date: 'Apr 28, 2024',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1588615419958-867c223c0429?auto=format&fit=crop&q=80&w=600'
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600'
   },
   {
     title: 'Influencer and KOL Marketing in Korea: What Global Brands Get Wrong',

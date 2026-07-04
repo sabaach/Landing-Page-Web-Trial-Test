@@ -1,8 +1,8 @@
 export function Footer() {
   return (
-    <footer className="bg-neutral-900 text-white pt-24 pb-8">
+    <footer className="bg-neutral-900 text-white pt-16 sm:pt-20 lg:pt-24 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 mb-12 sm:mb-16">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <span className="font-display font-bold text-2xl tracking-tight block mb-6">INQUIVIX</span>

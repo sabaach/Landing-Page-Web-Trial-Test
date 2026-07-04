@@ -4,7 +4,7 @@ import { Target } from 'lucide-react';
 
 export function CTA() {
   return (
-    <section id="contact" className="relative bg-surface-dark py-24 lg:py-32 overflow-hidden">
+    <section id="contact" className="relative bg-surface-dark py-16 sm:py-24 lg:py-32 overflow-hidden">
       {/* Background Accent Glow */}
       <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
         <div className="w-[800px] h-[800px] bg-primary-900/20 rounded-full blur-[100px] transform translate-y-1/4" />
@@ -27,7 +27,7 @@ export function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight"
+          className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 tracking-tight"
         >
           Ready to grow in Korea?
         </motion.h2>
@@ -37,7 +37,7 @@ export function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2"
         >
           Let's build a winning strategy tailored to your market, audience, and goals. 
           Book a call with our experts today. No pitch deck. No pressure. 

@@ -14,7 +14,7 @@ export function FAQ() {
 
   return (
     <SectionWrapper background="white" id="faq">
-      <div className="text-center mb-16 max-w-3xl mx-auto">
+      <div className="text-center mb-10 sm:mb-16 max-w-3xl mx-auto px-1">
         <motion.span 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="font-display text-3xl md:text-4xl font-bold text-neutral-900 mb-6 tracking-tight"
+          className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900 mb-4 sm:mb-6 tracking-tight"
         >
           Frequently asked questions about digital marketing in Korea
         </motion.h2>
@@ -52,10 +52,10 @@ export function FAQ() {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-inset"
+                className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-inset min-h-[56px]"
                 aria-expanded={isOpen}
               >
-                <span className="text-lg font-semibold text-neutral-900 pr-8">
+                <span className="text-sm sm:text-base md:text-lg font-semibold text-neutral-900 pr-4 sm:pr-8 leading-snug">
                   {index + 1}. {faq.question}
                 </span>
                 <div className={clsx(
@@ -74,7 +74,7 @@ export function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" as const }}
                   >
-                    <div className="px-6 pb-6 text-neutral-600 leading-relaxed">
+                    <div className="px-4 sm:px-6 pb-4 sm:pb-6 text-sm sm:text-base text-neutral-600 leading-relaxed">
                       {faq.answer}
                     </div>
                   </motion.div>
