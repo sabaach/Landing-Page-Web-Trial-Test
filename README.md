@@ -43,7 +43,7 @@ The page follows a single-page architecture with anchor-based navigation — eac
 > Replace with your Vercel deployment URL after publishing.
 
 ```
-https://your-inquivix-landing-page.vercel.app
+https://landing-page-web-trial-test.vercel.app
 ```
 
 ---
